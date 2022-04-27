@@ -23,16 +23,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .container h1 {
     font-size: 5rem;
+    margin-bottom: 1.5em;
 
 }
 
 .container:hover {
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
     transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container h1 {
+        font-size: 3rem;
+        color: #000;
+        text-align: center;
+    }
+
+    .container p {
+        font-size: 1.1rem;
+    }
 }
