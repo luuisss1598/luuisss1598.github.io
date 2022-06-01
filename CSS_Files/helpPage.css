@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: 'Arvo', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+    /* border: red solid 1px; */
+}
+
+
+/* ================== Home-page --> Header-CSSS ==================*/
+
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 20vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+
+    /* border: red solid 2px; */
+}
+
+.header-horizontal-line-1 {
+    width: 100%;
+    border: #C4C4C4 solid 1px;
+}
+
+.header-horizontal-line-2 {
+    width: 100%;
+    border: #4B4B4E solid 1px;
+}
+
+/* ================== Header Top-CSSS ==================*/
+.top-header-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: #000 solid 2px; */
+}
+
+.top-header-container .website-title {
+    width: 10%;
+    font-size: 40px;
+    color: #6A2983;
+    font-weight: bold;
+}
+
+.website-tittle-container {
+    text-decoration: none;
+}
+
+.top-header-container .website-search-bar {
+    width: 30%;
+    height: 45px;
+    border: none;
+    border: #000 solid 1px;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+.top-header-container .navbar-container {
+    width: 45%;
+    display: flex;
+    /* border: red solid 1px; */
+}
+
+.navbar-list-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .top-header-container .icon-img {
+    width: 70%;
+    height: 100%;
+} */
+
+.top-links {
+    font-size: 1.4rem;
+    padding: 0.3em 0.8em;
+    transition: all ease-in-out 0.4s;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #6A2983;
+}
+
+.top-links:visited {
+    color: #6A2983;
+}
+
+.top-links:hover {
+    margin: 0 0.2em;
+    background-color: #CBC3E3;
+    transform: scale(1.2);
+}
+
+
+/* ================== Header Bottom-CSSS ==================*/
+.bottom-header-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    /* border: #000 solid 1px; */
+}
+
+.bottom-list-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-links {
+    text-decoration: none;
+    color: #6A2983;
+    list-style: none;
+}
+
+.bottom-links h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #4B4B4E;
+}
+
+.dropdown-h2 {
+    padding: 0.4em 1.2em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.dropdown-menu a {
+    color: #000;
+    padding: 0.5em 1.2em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-h2 {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* ================== Home-page --> Upload-Button-CSSS ==================*/
+
+.upload-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upload-button {
+    width: 100%;
+    padding: 0.5em 1.5em;
+    font-size: 1.4rem;
+    border: none;
+    border: #6A2983;
+    background-color: #6A2983;
+    margin-right: 1em;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.upload-button:hover {
+    transform: scale(1.2);
+}
+
+
+/* ================== Home-page --> Buyer-Protection-CSSS ==================*/
+
+.buyer-protection-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    text-align: center;
+    border-bottom: #C9C9C9 solid 1px;
+
+}
+
+.buyer-protection-container p,
+span {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #4B4B4E;
+}
+
+.buyer-protection-container p .bold-text {
+    color: #3B3B3D;
+    font-weight: 600;
+}
+
+
+/* - - - - - - - - - - - - HELP PAGE CSS - - - - - - - - - - - - --*/
+.help-page-title {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0px;
+    background-color: #6A2983;
+    color: white;
+  }
+
+  .help-search-bar {
+    width: 100%;
+    margin: 0 auto;
+    text-align:center;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background-color: #6A2983;
+  }
+
+  #help-search-bar {
+    width: 60%;
+    padding: 0.5em;
+  }
+
+  .help-container {
+      width: 100%;
+      height: 400vh;
+      margin: 0 auto;
+  }
+
+  .help-page-main-container {
+    position: relative;
+    width: 935px;
+    height: 0px;
+    margin: 10px auto;
+    border: green solid 1px;
+  }
+
+  .help-page-main-container .box {
+    width: calc(300px - 30px);
+    height: calc(300px - 30px);
+    background: #F8F6F4;
+    float: left;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: Darkgrey solid 1px;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 20px;
+  }
+
+  .login-link {
+      border: #CBC3E3 solid 2px;
+      background-color: #CBC3E3;
+  }
