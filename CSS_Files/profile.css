@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: 'Arvo', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+/* ================== Home-page --> Header-CSSS ==================*/
+
+.header-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 20vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.header-horizontal-line-1 {
+    width: 100%;
+    border: #C4C4C4 solid 1px;
+}
+
+.header-horizontal-line-2 {
+    width: 100%;
+    border: #4B4B4E solid 1px;
+}
+
+/* ================== Header Top-CSSS ==================*/
+.top-header-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: #000 solid 2px; */
+}
+
+.top-header-container .website-title {
+    width: 10%;
+    font-size: 40px;
+    color: #6A2983;
+    font-weight: bold;
+}
+
+.website-tittle-container {
+    text-decoration: none;
+}
+
+.top-header-container .website-search-bar {
+    width: 30%;
+    height: 45px;
+    border: none;
+    border: #000 solid 1px;
+    border-radius: 30px;
+    padding: 1em;
+}
+
+.top-header-container .navbar-container {
+    width: 45%;
+    display: flex;
+    /* border: red solid 1px; */
+}
+
+.navbar-list-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .top-header-container .icon-img {
+    width: 70%;
+    height: 100%;
+} */
+
+.top-links {
+    font-size: 1.4rem;
+    padding: 0.3em 0.8em;
+    transition: all ease-in-out 0.4s;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #6A2983;
+}
+
+.top-links:visited {
+    color: #6A2983;
+}
+
+.top-links:hover {
+    margin: 0 0.2em;
+    background-color: #CBC3E3;
+    transform: scale(1.2);
+}
+
+
+/* ================== Header Bottom-CSSS ==================*/
+.bottom-header-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    /* border: #000 solid 1px; */
+}
+
+.bottom-list-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-links {
+    text-decoration: none;
+    color: #6A2983;
+    list-style: none;
+}
+
+.bottom-links h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #4B4B4E;
+}
+
+.dropdown-h2 {
+    padding: 0.4em 1.2em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.dropdown-menu a {
+    color: #000;
+    padding: 0.5em 1.2em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-h2 {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* ================== Home-page --> Upload-Button-CSSS ==================*/
+
+.upload-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upload-button {
+    width: 100%;
+    padding: 0.5em 1.5em;
+    font-size: 1.4rem;
+    border: none;
+    border: #6A2983;
+    background-color: #6A2983;
+    margin-right: 1em;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.upload-button:hover {
+    transform: scale(1.2);
+}
+
+
+/* ================== Home-page --> Buyer-Protection-CSSS ==================*/
+
+.buyer-protection-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    text-align: center;
+    border-bottom: #C9C9C9 solid 1px;
+
+}
+
+.buyer-protection-container p,
+span {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #4B4B4E;
+}
+
+.buyer-protection-container p .bold-text {
+    color: #3B3B3D;
+    font-weight: 600;
+}
+
+/* ================== Profile-page --> Icon and User-CSSS ==================*/
+
+.profile-icon-container {
+    width: 90%;
+    height: 15vh;
+    margin: 0 auto;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-icon-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-icon-container h3 {
+    font-size: 1.5rem;
+}
+
+.profile-line {
+    border: #000 solid 1px;
+    margin: 0.5em auto;
+    width: 90%;
+}
+
+.seller-item {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.seller-item p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0.3em auto;
+}
+
+/* ================== Profile-page --> Main-CSSS ==================*/
+
+
+.profile-page-main-container {
+    width: 90%;
+    margin: 0 auto;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile-page-main-container .main-feature-container {
+    display: flex;
+    width: 100%;
+    height: 24vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.boxes {
+    width: 16%;
+    /* min-width: 16%;
+    min-height: 24vh; */
+    height: 24vh;
+    /* background-color: #3B3B3D; */
+    /* border: #000 solid 1px; */
+    transition: all ease-in-out 0.4s;
+}
+
+.main-feature-container:hover {
+    margin: 0.4em 0;
+}
+
+.boxes:hover {
+    transform: scale(1.1);
+    margin: 0.5em;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-1.is-flipped,
+.card-2.is-flipped,
+.card-3.is-flipped,
+.card-4.is-flipped,
+.card-5.is-flipped,
+.card-6.is-flipped,
+.card-7.is-flipped,
+.card-8.is-flipped,
+.card-9.is-flipped,
+.card-10.is-flipped,
+.card-11.is-flipped,
+.card-12.is-flipped,
+.card-13.is-flipped,
+.card-14.is-flipped,
+.card-15.is-flipped,
+.card-16.is-flipped,
+.card-17.is-flipped,
+.card-18.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.card__face>p {
+    position: absolute;
+    top: -35%;
+    left: 3%;
+    font-size: 1.5rem;
+}
+
+/* .card__face {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+*/
+
+.front-face-wrapper {
+    /* border: #000 solid 1px; */
+    color: #fff;
+    background: rgba(0, 0, 0, .6);
+    padding: 0.2em .6em;
+    margin-top: 0.4em;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card__face--front-1 {
+    background-image: url(../Images/profile_image/photo-1.jpg);
+}
+
+.card__face--front-2 {
+    background-image: url(../Images/profile_image/photo-2.jpg);
+}
+
+.card__face--front-3 {
+    background-image: url(../Images/profile_image/photo-3.jpg);
+}
+
+.card__face--front-4 {
+    background-image: url(../Images/profile_image/photo-4.jpg);
+}
+
+.card__face--front-5 {
+    background-image: url(../Images/profile_image/photo-5.jpg);
+}
+
+.card__face--front-6 {
+    background-image: url(../Images/profile_image/photo-6.jpg);
+}
+
+.card__face--front-7 {
+    background-image: url(../Images/profile_image/photo-7.jpg);
+}
+
+.card__face--front-8 {
+    background-image: url(../Images/profile_image/photo-8.jpg);
+}
+
+.card__face--front-9 {
+    background-image: url(../Images/profile_image/photo-9.jpg);
+}
+
+.card__face--front-10 {
+    background-image: url(../Images/profile_image/photo-10.jpg);
+}
+
+.card__face--front-11 {
+    background-image: url(../Images/profile_image/photo-11.jpg);
+}
+
+.card__face--front-12 {
+    background-image: url(../Images/profile_image/photo-12.jpg);
+}
+
+.card__face--back-1,
+.card__face--back-2,
+.card__face--back-3,
+.card__face--back-4,
+.card__face--back-5,
+.card__face--back-6,
+.card__face--back-7,
+.card__face--back-8,
+.card__face--back-9,
+.card__face--back-10,
+.card__face--back-11,
+.card__face--back-12 {
+    background-color: #000;
+    transform: rotateY(180deg);
+}
+
+.card-back-content {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ================== Home-page --> Loader-Page-CSSS ==================*/
+
+.preload {
+    overflow: hidden;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+
+}
+
+
+
+.login-link {
+    border: #CBC3E3 solid 2px;
+    background-color: #CBC3E3;
+}
