@@ -1,0 +1,185 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Setup */
+body {
+    font-family: 'Outfit', sans-serif;
+    background: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%);
+    color: #222;
+    line-height: 1.45;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    min-height: 100vh;
+}
+
+/* Fade-in Animation */
+.container {
+    max-width: 750px;
+    width: 100%;
+    background: transparent;
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+nav {
+    margin-top: 8px;
+}
+
+nav a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #5f6c7b;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #333;
+    border-bottom: 1px solid #5f6c7b;
+}
+
+/* Section Setup */
+section {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+section h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #111;
+    letter-spacing: 0.5px;
+}
+
+/* Subsections */
+.company, .project, .education {
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.company h3, .project h3, .education h3 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #5f6c7b;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 6px;
+}
+
+ul li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.company ul, .project ul, .education ul {
+    padding-left: 22px;
+}
+
+.company ul li, .project ul li, .education ul li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 6px;
+}
+
+.company ul li::before,
+.project ul li::before,
+.education ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #5f6c7b;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+/* Position Titles */
+.position-title {
+    font-weight: 600;
+    font-style: italic;
+    color: #333;
+}
+
+/* Skills */
+ul.Skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 6px;
+}
+
+ul.Skills li {
+    background: rgba(95, 108, 123, 0.08);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5f6c7b;
+    transition: all 0.3s ease;
+}
+
+ul.Skills li:hover {
+    background: rgba(95, 108, 123, 0.15);
+    transform: scale(1.05);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .company h3, .project h3, .education h3 {
+        font-size: 1.1rem;
+    }
+
+    .company, .project, .education {
+        padding-left: 15px;
+    }
+}
